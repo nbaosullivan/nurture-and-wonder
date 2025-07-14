@@ -24,7 +24,7 @@ export default async function Post({ searchParams }) {
   const isLastPage = posts.length < POSTS_PER_PAGE;
 
   return (
-    <>
+    <div className="mb-14">
       {posts && posts?.length === 0 && (
         <div className="flex h-40 items-center justify-center">
           <span className="text-lg text-evergreen">
@@ -43,6 +43,6 @@ export default async function Post({ searchParams }) {
         isFirstPage={isFirstPage}
         isLastPage={isLastPage}
       />
-    </>
+    </div>
   );
 }
