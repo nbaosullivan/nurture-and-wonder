@@ -47,7 +47,7 @@ export default function Contact({ settings }) {
   return (
     <Container>
       <PageHeading className="mt-2 mb-3">Contact</PageHeading>
-      <div className="text-center">
+      <div className="max-w-xl mx-auto text-center">
         <p className="text-lg">To receive a personalised quote and discuss how I can best support your family, please get in touch.</p>
       </div>
 
@@ -165,7 +165,7 @@ export default function Contact({ settings }) {
 
             <button
               type="submit"
-              className="w-full py-4 font-bold text-lg text-white transition-colors bg-sunset-orange rounded-3xl hover:bg-twilight-pink focus:outline-none focus:ring-offset-2 focus:ring focus:ring-gray-200 px-7">
+              className="w-full py-4 font-bold text-lg text-cloud-white transition-colors bg-sunset-orange rounded-3xl hover:bg-twilight-pink focus:outline-none focus:ring-offset-2 focus:ring focus:ring-gray-200 px-7">
               {isSubmitting ? (
                 <svg
                   className="w-5 h-5 mx-auto text-white dark:text-black animate-spin"
