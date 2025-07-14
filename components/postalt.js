@@ -27,7 +27,7 @@ export default function PostAlt({
         )}>
         <div
           className={cx(
-            "relative overflow-hidden transition-all bg-gray-100 rounded-md dark:bg-gray-800",
+            "relative overflow-hidden transition-all bg-peach-blush rounded-md dark:bg-gray-800",
             aspect === "landscape" ? "aspect-video" : "aspect-square"
           )}>
           <Link href={`/post/minimal/${post.slug.current}`}>
@@ -45,7 +45,7 @@ export default function PostAlt({
                 sizes="80vw"
               />
             ) : (
-              <span className="absolute w-16 h-16 text-gray-200 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+              <span className="absolute w-16 h-16 text-evergreen -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
                 <PhotoIcon />
               </span>
             )}
@@ -59,7 +59,7 @@ export default function PostAlt({
           )}>
           <div
             className={cx(
-              "flex items-center space-x-3 text-gray-500 dark:text-gray-400"
+              "flex items-center space-x-3 text-evergreen dark:text-gray-400"
             )}>
             <time
               className="text-sm"
@@ -78,7 +78,7 @@ export default function PostAlt({
             )}>
             <Link href={`/post/minimal/${post.slug.current}`}>
               <span
-                className="bg-gradient-to-r from-black to-black dark:from-white dark:to-white
+                className="bg-gradient-to-r from-mountain-purple to-mountain-purple dark:from-white dark:to-white
         bg-[length:0px_2px]
         bg-left-bottom
         bg-no-repeat

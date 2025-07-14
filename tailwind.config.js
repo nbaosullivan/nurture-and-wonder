@@ -11,13 +11,34 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        gray: colors.neutral
+        gray: colors.neutral,
+        // Nurture and Wonder Color Palette
+        'sun-cream': '#FFF3E3',        // Background
+        'mountain-purple': '#7B5D8B',   // Header
+        'sunset-orange': '#F4A14D',     // Button
+        'cloud-white': '#f5f5f5',       // Button text
+        'peach-blush': '#F9C6B2',       // Accent box
+        'evergreen': '#3A4A42',         // Accent box text
+        'twilight-pink': '#D4A0A6',     // Hover state
+        'sky-blue': '#8ABFD1',          // Navigation/Footer
+        // Brand colors for backward compatibility
+        'brand-primary': '#7B5D8B',     // Mountain Purple
+        'brand-secondary': '#F9C6B2',   // Peach Blush
       },
       fontFamily: {
         // to change, update font in _document.js
-        sans: ["var(--font-inter)", ...defaultTheme.fontFamily.sans],
+        sans: ["var(--font-nunito)", ...defaultTheme.fontFamily.sans],
         serif: ["var(--font-lora)", ...defaultTheme.fontFamily.serif],
         stock: [defaultTheme.fontFamily.sans]
+      },
+      fontWeight: {
+        'light': '300',
+        'normal': '400',
+        'medium': '500',
+        'semibold': '600',
+        'bold': '700',
+        'extrabold': '800',
+        'black': '900',
       },
       aspectRatio: {
         "4/3": "4 / 3",

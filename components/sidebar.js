@@ -65,7 +65,7 @@ function RelatedPosts({ related, pathPrefix }) {
                   <h3 className="font-medium dark:text-white">
                     {item.title}
                   </h3>
-                  <p className="mt-2 text-sm text-gray-500">
+                  <p className="mt-2 text-sm text-evergreen">
                     <DateTime date={item.date} />
                   </p>
                 </div>
@@ -90,7 +90,7 @@ function Categories({ categories }) {
             <Link
               href={`/category/${item.slug.current}`}
               className="flex items-center justify-between py-2">
-              <h4 className="text-gray-800 dark:text-gray-400">
+              <h4 className="text-mountain-purple dark:text-gray-400">
                 {item.title}
               </h4>
               <Label pill={true} color={item.color}>

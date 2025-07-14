@@ -12,14 +12,14 @@ async function sharedMetaData(params) {
     title: {
       default:
         settings?.title ||
-        "Stablo - Blog Template for Next.js & Sanity CMS",
-      template: "%s | Stablo"
+        "Nurture and Wonder Nannying",
+      template: "%s | Nurture and Wonder Nannying"
     },
     description:
       settings?.description ||
-      "Stablo - popular open-source next.js and sanity blog template",
-    keywords: ["Next.js", "Sanity", "Tailwind CSS"],
-    authors: [{ name: "Surjith" }],
+      "Nurture and Wonder Nannying - Child care in Morzine",
+    keywords: ["Morzine", "Nannying", "Child care"],
+    
     canonical: settings?.url,
     openGraph: {
       images: [
@@ -33,7 +33,7 @@ async function sharedMetaData(params) {
       ]
     },
     twitter: {
-      title: settings?.title || "Stablo Template",
+      title: settings?.title,
       card: "summary_large_image"
     },
     robots: {

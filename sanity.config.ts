@@ -17,11 +17,11 @@ import { table } from "@sanity/table";
 import { codeInput } from "@sanity/code-input";
 
 export const PREVIEWABLE_DOCUMENT_TYPES: string[] = ["post"];
-console.log(projectId);
+
 
 export default defineConfig({
   name: "default",
-  title: "Stablo Template",
+  title: "Nurture and Wonder",
   basePath: "/studio",
   projectId: projectId,
   dataset: dataset,

@@ -12,35 +12,27 @@ import { myLoader } from "@/utils/all";
 
 export default function Navbar(props) {
   const leftmenu = [
-    {
-      label: "Home",
-      href: "/"
-    },
+
     {
       label: "About",
       href: "/about"
     },
     {
-      label: "Contact",
-      href: "/contact"
-    }
+      label: "Services",
+      href: "/services"
+    },
+
   ];
 
   const rightmenu = [
-    {
-      label: "Archive",
-      href: "/archive"
+  
+   {
+      label: "Testimonials ",
+      href: "/testimonials"
     },
     {
-      label: "Pro Version",
-      href: "https://stablo-pro.web3templates.com/",
-      external: true,
-      badge: "new"
-    },
-    {
-      label: "Download",
-      href: "https://web3templates.com/templates/stablo-minimal-blog-website-template",
-      external: true
+      label: "Contact",
+      href: "/contact"
     }
   ];
 
@@ -52,7 +44,7 @@ export default function Navbar(props) {
         <Disclosure>
           {({ open }) => (
             <>
-              <div className="flex flex-wrap justify-between md:flex-nowrap md:gap-10">
+              <div className="flex flex-wrap justify-between uppercase font-extrabold text-mountain-purple tracking-wide text-xl md:flex-nowrap md:gap-10">
                 <div className="order-1 hidden w-full flex-col items-center justify-start md:order-none md:flex md:w-auto md:flex-1 md:flex-row md:justify-end">
                   {leftmenu.map((item, index) => (
                     <Fragment key={`${item.label}${index}`}>
@@ -66,7 +58,7 @@ export default function Navbar(props) {
                         <Link
                           href={item.href}
                           key={`${item.label}${index}`}
-                          className="px-5 py-2 text-sm font-medium text-gray-600 hover:text-blue-500 dark:text-gray-400"
+                          className="px-5  py-2 hover:text-twilight-pink dark:text-gray-400"
                           target={item.external ? "_blank" : ""}
                           rel={item.external ? "noopener" : ""}>
                           {item.label}
@@ -76,39 +68,29 @@ export default function Navbar(props) {
                   ))}
                 </div>
                 <div className="flex w-full items-center justify-between md:w-auto">
-                  <Link href="/" className="w-28 dark:hidden">
-                    {props.logo ? (
-                      <Image
-                        {...urlForImage(props.logo)}
-                        alt="Logo"
-                        priority={true}
-                        sizes="(max-width: 640px) 100vw, 200px"
-                      />
-                    ) : (
-                      <span className="block text-center">
-                        Stablo
+                  {/* Light mode text logo */}
+                  <Link href="/" className="flex flex-col items-center justify-center w-auto dark:hidden">
+                    <span className="text-evergreen font-bold  tracking-widest uppercase" style={{letterSpacing: '0.03em'}}>
+                      NURTURE AND
+                    </span>
+                    <span className="text-evergreen font-extrabold text-3xl uppercase" style={{letterSpacing: '0.08em', marginTop: '-0.1em'}}>
+                      WONDER
+                    </span>
+                    <span className="flex items-center gap-2 mt-1">
+                      <span className="block h-0.5 w-6 bg-evergreen rounded-full opacity-60"></span>
+                      <span className="text-evergreen font-bold text-xs tracking-widest uppercase" style={{letterSpacing: '0.25em'}}>
+                        NANNYING
                       </span>
-                    )}
+                      <span className="block h-0.5 w-6 bg-evergreen rounded-full opacity-60"></span>
+                    </span>
                   </Link>
-                  <Link href="/" className="hidden w-28 dark:block">
-                    {props.logoalt ? (
-                      <Image
-                        {...urlForImage(props.logoalt)}
-                        alt="Logo"
-                        priority={true}
-                        sizes="(max-width: 640px) 100vw, 200px"
-                      />
-                    ) : (
-                      <span className="block text-center">
-                        Stablo
-                      </span>
-                    )}
-                  </Link>
+        
+        
                   <Disclosure.Button
                     aria-label="Toggle Menu"
-                    className="ml-auto rounded-md px-2 py-1 text-gray-500 focus:text-blue-500 focus:outline-none dark:text-gray-300 md:hidden ">
+                    className="ml-auto rounded-md px-2 py-1 text-mountain-purple focus:text-twilight-pink focus:outline-none dark:text-gray-300 md:hidden ">
                     <svg
-                      className="h-6 w-6 fill-current"
+                      className="h-12 w-12 fill-current"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24">
                       {open && (
@@ -141,12 +123,12 @@ export default function Navbar(props) {
                         <Link
                           href={item.href}
                           key={`${item.label}${index}`}
-                          className="px-5 py-2 text-sm font-medium text-gray-600 hover:text-blue-500 dark:text-gray-400"
+                          className="px-5 py-2 text-text-mountain-purple hover:text-twilight-pink dark:text-gray-400"
                           target={item.external ? "_blank" : ""}
                           rel={item.external ? "noopener" : ""}>
                           <span> {item.label}</span>
                           {item.badge && (
-                            <span className="ml-2 rounded bg-blue-100 px-2 py-0.5 text-xs font-semibold text-blue-600 dark:bg-cyan-200 dark:text-blue-800 ">
+                            <span className="ml-2 rounded bg-peach-blush px-2 py-0.5 text-xs font-semibold text-evergreen dark:bg-peach-blush dark:text-evergreen ">
                               {item.badge}
                             </span>
                           )}
@@ -171,7 +153,7 @@ export default function Navbar(props) {
                         <Link
                           href={item.href}
                           key={`${item.label}${index}`}
-                          className="w-full px-5 py-2 text-sm font-medium text-gray-600 hover:text-blue-500 dark:text-gray-400"
+                          className="w-full px-5 py-2 text-lg font-semibold text-mountain-purple hover:text-twilight-pink dark:text-gray-400"
                           target={item.external ? "_blank" : ""}
                           rel={item.external ? "noopener" : ""}>
                           {item.label}
@@ -198,10 +180,10 @@ const DropdownMenu = ({ menu, items, mobile }) => {
         <>
           <Menu.Button
             className={cx(
-              "flex items-center gap-x-1 rounded-md px-5 py-2 text-sm font-medium  outline-none transition-all focus:outline-none focus-visible:text-indigo-500 focus-visible:ring-1 dark:focus-visible:bg-gray-800",
-              open
-                ? "text-blue-500 hover:text-blue-500"
-                : " text-gray-600 dark:text-gray-400 ",
+              "flex items-center gap-x-1 rounded-md px-5 py-2 text-sm font-medium  outline-none transition-all focus:outline-none focus-visible:text-twilight-pink focus-visible:ring-1 dark:focus-visible:bg-gray-800",
+                              open
+                  ? "text-twilight-pink hover:text-twilight-pink"
+                  : " text-mountain-purple dark:text-gray-400 ",
               mobile ? "w-full px-4 py-2 " : "inline-block px-4 py-2"
             )}>
             <span>{menu.label}</span>
@@ -218,7 +200,7 @@ const DropdownMenu = ({ menu, items, mobile }) => {
             <Menu.Items
               className={cx(
                 "z-20 origin-top-left rounded-md  focus:outline-none  lg:absolute lg:left-0  lg:w-56",
-                !mobile && "bg-white shadow-lg  dark:bg-gray-800"
+                !mobile && "bg-sun-cream shadow-lg  dark:bg-gray-800"
               )}>
               <div className={cx(!mobile && "py-3")}>
                 {items.map((item, index) => (
@@ -229,8 +211,8 @@ const DropdownMenu = ({ menu, items, mobile }) => {
                         className={cx(
                           "flex items-center space-x-2 px-5 py-2 text-sm lg:space-x-4",
                           active
-                            ? "text-blue-500"
-                            : "text-gray-700 hover:text-blue-500 focus:text-blue-500 dark:text-gray-300"
+                            ? "text-twilight-pink"
+                            : "text-mountain-purple hover:text-twilight-pink focus:text-twilight-pink dark:text-gray-300"
                         )}>
                         <span> {item.title}</span>
                       </Link>

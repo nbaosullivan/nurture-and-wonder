@@ -9,48 +9,16 @@ export default function About({ authors, settings }) {
       <h1 className="text-brand-primary mb-3 mt-2 text-center text-3xl font-semibold tracking-tight dark:text-white lg:text-4xl lg:leading-snug">
         About
       </h1>
-      <div className="text-center">
-        <p className="text-lg">We are a small passionate team.</p>
+      <div className="prose-2xl prose mx-auto mt-14 text-center">
+        <p> I’m Hannah, the heart behind Nurture and Wonder Nannying.</p>
       </div>
 
-      <div className="mb-16 mt-6 grid grid-cols-3 gap-5 md:mb-32 md:mt-16 md:gap-16">
-        {authors.slice(0, 3).map(author => {
-          const imageProps = urlForImage(author?.image) || null;
-          return (
-            <div
-              key={author._id}
-              className="relative aspect-square overflow-hidden rounded-md bg-slate-50 odd:translate-y-10 odd:md:translate-y-16">
-              <Link href={`/author/${author?.slug}`}>
-                {imageProps && (
-                  <Image
-                    src={imageProps?.src}
-                    alt={author?.name || " "}
-                    fill
-                    sizes="(max-width: 320px) 100vw, 320px"
-                    className="object-cover"
-                  />
-                )}
-              </Link>
-            </div>
-          );
-        })}
-      </div>
 
-      <div className="prose mx-auto mt-14 text-center dark:prose-invert">
-        <p>
-          We provide real-time connectivity to enable software
-          providers and financial institutions to build integrated
-          products for their small business customers.
-        </p>
-        <p>
-          Our API infrastructure is leveraged by clients ranging from
-          lenders to corporate card providers and business forecasting
-          tools, with use cases including automatic reconciliation,
-          business dashboarding, and loan decisioning.
-        </p>
-        <p>
-          <Link href="/contact">Get in touch</Link>
-        </p>
+      <div className="prose prose-xl mx-auto mt-14 text-center dark:prose-invert">
+      <p> With over six years working in childcare, I’ve worked in outdoor early years settings, taught yoga in schools, and have extensive experience as a private nanny, supporting families in meaningful ways.</p>
+<p>With an adventurous and caring spirit, my practice is rooted in nurturing children through creative play, meaningful connection, and time spent exploring the outdoors. My approach centers on building strong, secure attachments and ensuring each child feels safe, engaged, and valued. </p>
+<p>I’m paediatric first aid trained with an up-to-date DBS, combining a strong focus on safety with a playful, responsive approach. From roaming alpine trails and splashing around at Aquariaz to ski school pick up and making a yummy lunch, I tailor each day to your family’s needs to create cherished and enriching experiences in these glorious mountains.</p>
+
       </div>
     </Container>
   );

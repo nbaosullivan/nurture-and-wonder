@@ -30,7 +30,7 @@ export default function PostList({
         )}>
         <div
           className={cx(
-            " overflow-hidden rounded-md bg-gray-100 transition-all hover:scale-105   dark:bg-gray-800"
+            " overflow-hidden rounded-md bg-peach-blush transition-all hover:scale-105   dark:bg-gray-800"
           )}>
           <Link
             className={cx(
@@ -58,7 +58,7 @@ export default function PostList({
                 sizes="(max-width: 768px) 30vw, 33vw"
               />
             ) : (
-              <span className="absolute left-1/2 top-1/2 h-16 w-16 -translate-x-1/2 -translate-y-1/2 text-gray-200">
+              <span className="absolute left-1/2 top-1/2 h-16 w-16 -translate-x-1/2 -translate-y-1/2 text-evergreen">
                 <PhotoIcon />
               </span>
             )}
@@ -88,7 +88,7 @@ export default function PostList({
                   post.slug.current
                 }`}>
                 <span
-                  className="bg-gradient-to-r from-green-200 to-green-100 bg-[length:0px_10px] bg-left-bottom
+                  className="bg-gradient-to-r from-peach-blush to-peach-blush bg-[length:0px_10px] bg-left-bottom
       bg-no-repeat
       transition-[background-size]
       duration-500
@@ -102,7 +102,7 @@ export default function PostList({
 
             <div className="hidden">
               {post.excerpt && (
-                <p className="mt-2 line-clamp-3 text-sm text-gray-500 dark:text-gray-400">
+                <p className="mt-2 line-clamp-3 text-sm text-evergreen dark:text-gray-400">
                   <Link
                     href={`/post/${
                       pathPrefix ? `${pathPrefix}/` : ""
@@ -113,7 +113,7 @@ export default function PostList({
               )}
             </div>
 
-            <div className="mt-3 flex items-center space-x-3 text-gray-500 dark:text-gray-400">
+            <div className="mt-3 flex items-center space-x-3 text-evergreen dark:text-gray-400">
               <Link href={`/author/${post?.author?.slug?.current}`}>
                 <div className="flex items-center gap-3">
                   <div className="relative h-5 w-5 flex-shrink-0">
@@ -132,7 +132,7 @@ export default function PostList({
                   </span>
                 </div>
               </Link>
-              <span className="text-xs text-gray-300 dark:text-gray-600">
+              <span className="text-xs text-evergreen dark:text-gray-600">
                 &bull;
               </span>
               <time

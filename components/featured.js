@@ -48,11 +48,11 @@ export default function Featured({ post, pathPrefix }) {
             post.slug.current
           }`}>
           <div className="max-w-2xl">
-            <h1 className="mt-2 mb-3 text-3xl font-semibold tracking-tight text-white lg:leading-tight text-brand-primary lg:text-5xl">
+            <h1 className="mt-2 mb-3 text-3xl font-semibold tracking-tight text-mountain-purple lg:leading-tight text-brand-primary lg:text-5xl">
               {post.title}
             </h1>
 
-            <div className="flex mt-4 space-x-3 text-gray-500 md:mt-8 ">
+            <div className="flex mt-4 space-x-3 text-evergreen md:mt-8 ">
               <div className="flex flex-col gap-3 md:items-center md:flex-row">
                 <div className="flex items-center gap-3">
                   <div className="relative flex-shrink-0 w-5 h-5">
@@ -66,7 +66,7 @@ export default function Featured({ post, pathPrefix }) {
                       />
                     )}
                   </div>
-                  <p className="text-gray-100 ">
+                  <p className="text-evergreen ">
                     {post.author.name}{" "}
                     <span className="hidden pl-2 md:inline"> ·</span>
                   </p>
@@ -75,7 +75,7 @@ export default function Featured({ post, pathPrefix }) {
                 <div>
                   <div className="flex space-x-2 text-sm md:flex-row md:items-center">
                     <time
-                      className="text-white"
+                      className="text-evergreen"
                       dateTime={post?.publishedAt || post._createdAt}>
                       {format(
                         parseISO(
@@ -84,7 +84,7 @@ export default function Featured({ post, pathPrefix }) {
                         "MMMM dd, yyyy"
                       )}
                     </time>
-                    <span className="text-white">
+                    <span className="text-evergreen">
                       · {post.estReadingTime || "5"} min read
                     </span>
                   </div>
