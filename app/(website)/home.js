@@ -2,28 +2,30 @@ import Link from "next/link";
 import Container from "@/components/container";
 import Image from "next/image";
 import { SunIcon, MoonIcon, BedIcon, QuoteIcon } from "lucide-react";
+import ServiceBox from "@/components/ServiceBox";
 
 const services = [
   {
-    title: "Flexible day nannying",
-    description: "Hourly, half day, or full day nannying packages",
-    icon: SunIcon,
-    color: "bg-sunset-orange"
+      title: "Flexible nannying",
+      description: `Need the kids picked up from ski school? Or maybe you fancy a full child-free day on the hill? 
+Book hourly, half day or full day packages. 
+`,
+      icon: SunIcon,
+      color: "bg-sunset-orange"
   },
   {
-    title: "Evening babysitting",
-    description: "Evening babysitting",
-    icon: MoonIcon,
-    color: "bg-mountain-purple"
+      title: "Evening babysitting",
+      description: "Thinking about a dinner out in one of Morzines top restaurants or a late night boogie? I've got you covered, from dinner and bedtime stories to sleep cover.",
+      icon: MoonIcon,
+      color: "bg-mountain-purple"
   },
   {
-    title: "Overnight care",
-    description: "Overnight care and proxy parenting",
-    icon: BedIcon,
-    color: "bg-sky-blue"
+      title: "Overnight care",
+      description: "You're a PDS resident with a business trip away planned? Experienced at proxy parenting, I offer overnight stays to take care of your little ones.",
+      icon: BedIcon,
+      color: "bg-sky-blue"
   }
 ];
-
 const testimonials = [
   {
     name: "Maureen Bray",
@@ -41,31 +43,56 @@ const testimonials = [
 
 export default function Home() {
   return (
-    <Container>
-      {/* Hero Section */}
-      <div className="flex flex-col items-center justify-center text-center mt-6 mb-12">
-        <div className="w-full max-w-2xl mx-auto rounded-xl overflow-hidden shadow-none mb-6">
+    <>
+      {/* Hero Section with Overlap */}
+      <div className="relative flex flex-col max-w-6xl mx-auto items-center justify-center mt-6 mb-12">
+        {/* Hero Image */}
+        <div className="rounded-lg overflow-hidden shadow-none">
           <Image
             src="/img/nurture-and-wonder-group-ages.jpeg"
             alt="Nurture and Wonder - Hannah with children"
-            width={900}
-            height={500}
-            className="w-full h-[400px] md:h-[620px]  object-center object-cover rounded-lg"
+            width={1500}
+            height={700}
+            className="h-[800px] w-100 object-center object-cover rounded-lg"
             priority
           />
         </div>
-        <h1 className="text-3xl md:text-4xl font-extrabold text-mountain-purple mb-2">
-          Bespoke Childcare in the Portes du Soleil
-        </h1>
-        <p className="text-lg text-evergreen mb-4 max-w-xl mx-auto">
-          Private nannying and babysitting, year-round, tailored to your family’s needs. Local or visiting, your little ones will be cared for with nurture and attentiveness, filling each day with joyful moments.
-        </p>
-
-        <Link href="/contact" className="inline-block mt-2 px-7 py-3 rounded-md bg-mountain-purple text-cloud-white font-bold text-lg shadow hover:bg-twilight-pink transition">
-          Contact
-        </Link>
+        {/* Overlapping Text Box */}
+        <div
+          className="
+            absolute
+            left-1/2
+            -translate-x-1/2
+  
+            -bottom-1
+     
+            w-[95%] md:w-[70%] 
+            bg-peach-blush
+            rounded-xl
+            p-4 md:py-8 
+            shadow-none
+            flex flex-col items-center
+            border border-peach-blush
+          "
+          style={{ zIndex: 2 }}
+        >
+          <h1 className="text-2xl md:text-3xl font-extrabold text-mountain-purple mb-2 text-center">
+            Bespoke Childcare in the Portes du Soleil
+          </h1>
+          <p className="text-lg text-evergreen mb-4 max-w-xl mx-auto text-center">
+            Private nannying and babysitting, year-round, tailored to your family’s needs. Local or visiting, your little ones will be cared for with nurture and attentiveness, filling each day with joyful moments.
+          </p>
+          <Link
+            href="/contact"
+            className="inline-block mt-2 px-7 py-3 rounded-3xl bg-mountain-purple text-cloud-white font-bold text-lg shadow hover:bg-twilight-pink transition"
+          >
+            Contact
+          </Link>
+        </div>
+        {/* Spacer to prevent content overlap */}
+        <div className="h-32 md:h-24"></div>
       </div>
-
+<Container>
       {/* About/Intro */}
       <div className="prose prose-xl mx-auto text-center dark:prose-invert mb-12">
         <p>
@@ -78,21 +105,17 @@ export default function Home() {
       </div>
 
       {/* Services Preview */}
-      <h2 className="text-center text-2xl font-bold text-mountain-purple mb-6">Services Offered</h2>
+      <h2 className="text-center text-2xl font-bold text-mountain-purple mb-14">Services Offered</h2>
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 mb-12">
-        {services.map((service, idx) => {
-          const Icon = service.icon;
-          return (
-            <div key={service.title} className="relative bg-peach-blush p-6 pt-12 rounded-lg flex flex-col items-center">
-              {/* Icon Overlap */}
-              <div className={`absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 flex items-center justify-center rounded-full border-4 border-white ${service.color}`} style={{zIndex:2}}>
-                <Icon className="w-8 h-8 text-cloud-white" />
-              </div>
-              <h3 className="text-xl font-semibold mt-6 text-center">{service.title}</h3>
-              <p className="text-lg mt-2 text-center">{service.description}</p>
-            </div>
-          );
-        })}
+        {services.map((service, idx) => (
+          <ServiceBox
+            key={service.title}
+            title={service.title}
+            description={service.description}
+            icon={service.icon}
+            color={service.color}
+          />
+        ))}
       </div>
       <div className="text-center mb-12">
         <Link href="/services" className="inline-block px-6 py-2 rounded-md bg-sunset-orange text-cloud-white font-semibold hover:bg-twilight-pink transition">
@@ -126,13 +149,14 @@ export default function Home() {
       </div>
 
       {/* Final CTA */}
-      <div className="text-center mt-10 mb-6">
+      <div className="text-center my-14">
         <h2 className="text-2xl font-bold text-mountain-purple mb-2">Ready to chat?</h2>
         <p className="text-lg text-evergreen mb-4">Get in touch to discuss your family’s needs or to book a call with Hannah.</p>
         <Link href="/contact" className="inline-block px-8 py-3 rounded-md bg-mountain-purple text-cloud-white font-bold text-lg shadow hover:bg-twilight-pink transition">
           Contact Hannah
         </Link>
       </div>
-    </Container>
+      </Container>
+    </>
   );
 }

@@ -1,5 +1,6 @@
 import Container from "@/components/container";
 import { QuoteIcon } from "lucide-react";
+import PageHeading from "@/components/PageHeading";
 
 const testimonials = [
   {
@@ -31,25 +32,23 @@ const testimonials = [
 export default function Testimonials() {
   return (
     <Container>
-      <h1 className="text-brand-primary text-center text-3xl font-semibold lg:text-4xl lg:leading-snug mb-10">
-        Testimonials
-      </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 my-10">
+      <PageHeading className="mb-10">Testimonials</PageHeading>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 my-14">
         {testimonials.map((t, idx) => (
           <div
             key={t.name + t.date}
-            className="relative bg-peach-blush p-8 pt-14 rounded-xl flex flex-col items-center"
+            className="relative bg-peach-blush p-10 pt-16 rounded-lg flex flex-col items-center shadow-lg border-b-4 border-peach-blush-dark"
           >
             {/* Quotation Icon Overlap */}
-            <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 flex items-center justify-center rounded-full border-4 border-white bg-sunset-orange" style={{zIndex:2}}>
-              <QuoteIcon className="w-8 h-8 text-cloud-white" />
+            <div className="absolute -top-10 left-10 w-20 h-20 flex items-center justify-center rounded-full border-4 border-white bg-sunset-orange shadow-md" style={{zIndex:2}}>
+              <QuoteIcon className="w-10 h-10 text-cloud-white" />
             </div>
-            <blockquote className="text-lg text-evergreen text-center font-medium leading-relaxed">
+            <blockquote className="text-xl md:text-2xl text-evergreen text-center font-semibold leading-relaxed mb-6 mt-2">
               “{t.text}”
             </blockquote>
-            <div className="mt-6 text-center">
-              <div className="font-extrabold text-mountain-purple text-base uppercase tracking-wide">{t.name}</div>
-              <div className="text-sm text-evergreen font-semibold">{t.service}, {t.date}</div>
+            <div className="mt-2 text-center">
+              <div className="font-extrabold text-mountain-purple text-base uppercase tracking-wide mb-1">{t.name}</div>
+              <div className="text-sm text-evergreen font-semibold opacity-80">{t.service}, {t.date}</div>
             </div>
           </div>
         ))}

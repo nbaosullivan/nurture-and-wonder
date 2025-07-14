@@ -8,6 +8,7 @@ import { parseISO, format } from "date-fns";
 
 import CategoryLabel from "@/components/blog/category";
 import AuthorCard from "@/components/blog/authorCard";
+import PageHeading from "@/components/PageHeading";
 
 export default function Post(props) {
   const { loading, post } = props;
@@ -34,9 +35,7 @@ export default function Post(props) {
             <CategoryLabel categories={post.categories} />
           </div>
 
-          <h1 className="text-brand-primary mb-3 mt-2 text-center text-3xl font-semibold tracking-tight dark:text-white lg:text-4xl lg:leading-snug">
-            {post.title}
-          </h1>
+          <PageHeading className="mb-3 mt-2 tracking-tight dark:text-white">{post.title}</PageHeading>
 
           <div className="mt-3 flex justify-center space-x-3 text-evergreen ">
             <div className="flex items-center gap-3">

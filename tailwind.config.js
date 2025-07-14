@@ -17,7 +17,9 @@ module.exports = {
         'mountain-purple': '#7B5D8B',   // Header
         'sunset-orange': '#F4A14D',     // Button
         'cloud-white': '#f5f5f5',       // Button text
+        'cloud-grey': '#ededed',       // Subtle lighter grey/darker white for borders
         'peach-blush': '#F9C6B2',       // Accent box
+        'peach-blush-dark': '#E8B19A',   // Darker shade for depth
         'evergreen': '#3A4A42',         // Accent box text
         'twilight-pink': '#D4A0A6',     // Hover state
         'sky-blue': '#8ABFD1',          // Navigation/Footer

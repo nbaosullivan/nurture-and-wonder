@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import Container from "@/components/container";
 import Archive from "./archive";
 import Loading from "@/components/loading";
+import PageHeading from "@/components/PageHeading";
 
 export const dynamic = "force-dynamic";
 
@@ -11,9 +12,7 @@ export default async function ArchivePage({ searchParams }) {
   return (
     <>
       <Container className="relative">
-        <h1 className="text-center text-3xl font-semibold tracking-tight dark:text-white lg:text-4xl lg:leading-snug">
-          Blog
-        </h1>
+        <PageHeading>Blog</PageHeading>
         <div className="text-center">
           <p className="mt-2 text-lg">
             Thoughts, tips, and inspiration from Nurture and Wonder.

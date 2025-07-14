@@ -9,6 +9,7 @@ import {
   EnvelopeIcon,
   PhoneIcon
 } from "@heroicons/react/24/outline";
+import PageHeading from "@/components/PageHeading";
 export default function Contact({ settings }) {
   const {
     register,
@@ -24,13 +25,13 @@ export default function Contact({ settings }) {
   const [isSuccess, setIsSuccess] = useState(false);
   const [message, setMessage] = useState(false);
   // Please update the Access Key in the Sanity CMS - Site Congig Page
-  const apiKey = settings?.w3ckey || "YOUR_ACCESS_KEY_HERE";
+  const apiKey = settings?.w3ckey || "";
 
   const { submit: onSubmit } = useWeb3Forms({
     access_key: apiKey,
     settings: {
-      from_name: "Stablo Template",
-      subject: "New Contact Message from Stablo Website"
+      from_name: `Nurture and Wonder Nannying`,
+      subject: "New Contact Message from Nurture and Wonder Nannying"
     },
     onSuccess: (msg, data) => {
       setIsSuccess(true);
@@ -45,11 +46,9 @@ export default function Contact({ settings }) {
 
   return (
     <Container>
-      <h1 className="mt-2 mb-3 text-3xl font-semibold tracking-tight text-center lg:leading-snug text-brand-primary lg:text-4xl dark:text-white">
-        Contact
-      </h1>
+      <PageHeading className="mt-2 mb-3">Contact</PageHeading>
       <div className="text-center">
-        <p className="text-lg">To receive a personalised quote and discuss how I can best support your family, please get in touch</p>
+        <p className="text-lg">To receive a personalised quote and discuss how I can best support your family, please get in touch.</p>
       </div>
 
       <div className="grid my-10 md:grid-cols-2">
@@ -58,7 +57,7 @@ export default function Contact({ settings }) {
             Contact Nurture and Wonder Nannying
           </h2>
           <p className="max-w-sm mt-5">
-          To receive a personalised quote and discuss how I can best support your family, please get in touch
+          To receive a personalised quote and discuss how I can best support your family, please get in touch.
           </p>
 
           <div className="mt-5">
@@ -96,7 +95,7 @@ export default function Contact({ settings }) {
                 type="text"
                 placeholder="Full Name"
                 autoComplete="false"
-                className={`w-full px-4 py-3 border-2 placeholder:text-evergreen dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-gray-900 bg-sun-cream focus:ring-4  ${
+                className={`w-full bg-white px-4 py-3 border-2 placeholder:text-evergreen dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-gray-900 bg-sun-cream focus:ring-4  ${
                   errors.name
                     ? "border-red-600 focus:border-red-600 ring-red-100 dark:ring-0"
                     : "border-sky-blue focus:border-twilight-pink ring-peach-blush dark:border-gray-600 dark:focus:border-white dark:ring-0"
@@ -123,7 +122,7 @@ export default function Contact({ settings }) {
                 placeholder="Email Address"
                 name="email"
                 autoComplete="false"
-                className={`w-full px-4 py-3 border-2 placeholder:text-evergreen dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-gray-900 bg-sun-cream focus:ring-4  ${
+                className={`w-full bg-white px-4 py-3 border-2 placeholder:text-evergreen dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-gray-900 bg-sun-cream focus:ring-4  ${
                   errors.email
                     ? "border-red-600 focus:border-red-600 ring-red-100 dark:ring-0"
                     : "border-sky-blue focus:border-twilight-pink ring-peach-blush dark:border-gray-600 dark:focus:border-white dark:ring-0"
@@ -147,7 +146,7 @@ export default function Contact({ settings }) {
               <textarea
                 name="message"
                 placeholder="Your Message"
-                className={`w-full px-4 py-3 border-2 placeholder:text-evergreen dark:text-white dark:placeholder:text-gray-200 dark:bg-gray-900 bg-sun-cream rounded-md outline-none  h-36 focus:ring-4  ${
+                className={`w-full px-4 py-3 bg-white border-2 placeholder:text-evergreen dark:text-white dark:placeholder:text-gray-200 dark:bg-gray-900 bg-sun-cream rounded-md outline-none  h-36 focus:ring-4  ${
                   errors.message
                     ? "border-red-600 focus:border-red-600 ring-red-100 dark:ring-0"
                     : "border-sky-blue focus:border-twilight-pink ring-peach-blush dark:border-gray-600 dark:focus:border-white dark:ring-0"
@@ -166,7 +165,7 @@ export default function Contact({ settings }) {
 
             <button
               type="submit"
-              className="w-full py-4 font-bold text-lg text-cloud-white transition-colors bg-sunset-orange rounded-3xl hover:bg-twilight-pink focus:outline-none focus:ring-offset-2 focus:ring focus:ring-gray-200 px-7">
+              className="w-full py-4 font-bold text-lg text-white transition-colors bg-sunset-orange rounded-3xl hover:bg-twilight-pink focus:outline-none focus:ring-offset-2 focus:ring focus:ring-gray-200 px-7">
               {isSubmitting ? (
                 <svg
                   className="w-5 h-5 mx-auto text-white dark:text-black animate-spin"
