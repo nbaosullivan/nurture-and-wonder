@@ -18,7 +18,7 @@ Book hourly, half day or full day packages.
     },
     {
         title: "Evening babysitting",
-        description: "Thinking about a dinner out in one of Morzines top restaurants or a late night boogie? I've got you covered, from dinner and bedtime stories to sleep cover.",
+        description: "Thinking about a dinner out in one of Morzine's top restaurants or a late night boogie? I've got you covered, from dinner and bedtime stories to sleep cover.",
         icon: MoonIcon,
         color: "bg-mountain-purple"
     },
