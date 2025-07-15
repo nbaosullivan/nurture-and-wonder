@@ -33,7 +33,10 @@ export default function Testimonials() {
   return (
     <Container>
       <PageHeading className="mb-10">Testimonials</PageHeading>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 my-14">
+      <div className="mt-12 prose prose-xl max-w-xl text-center mx-auto">
+          <p>Kind words from the families I’ve had the joy of supporting — a glimpse into the moments we’ve shared.</p>
+        </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 my-20">
         {testimonials.map((t, idx) => (
           <div
             key={t.name + t.date}

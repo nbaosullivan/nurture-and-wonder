@@ -52,7 +52,7 @@ export default function Contact({ settings }) {
         </div>
 
       <div className="grid my-10 md:grid-cols-2">
-        <div className="my-10">
+        <div className="my-12">
      
       
           <div >

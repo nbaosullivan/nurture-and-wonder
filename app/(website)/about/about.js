@@ -15,7 +15,7 @@ export default function About({ authors, settings }) {
             alt="Nurture and Wonder - Hannah with children"
             width={1500}
             height={700}
-            className="w-80 h-80 object-center object-cover rounded-full border-8 border-white"
+            className="w-96 h-96 object-center object-cover rounded-full border-8 border-white"
             priority
           />
      
