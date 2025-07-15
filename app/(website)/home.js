@@ -54,7 +54,7 @@ export default function Home() {
         </div>
         {/* Overlapping Text Box */}
         <div
-          className="absolute w-[95%] md:w-auto -bottom-48 md:-bottom-24 flex items-center justify-center bg-peach-blush rounded-lg px-10 py-12 md:py-10 md:px-10 flex flex-col items-center w-[420px] md:w-[500px] border-b-4 border-r-4 border-peach-blush-dark shadow-[8px_8px_24px_rgba(232,177,154,0.18)]"
+          className="absolute w-[95%] md:w-auto -bottom-48 md:-bottom-28 flex items-center justify-center bg-peach-blush rounded-lg px-10 py-12 md:py-10 md:px-10 flex flex-col items-center w-[420px] md:w-[500px] border-b-4 border-r-4 border-peach-blush-dark shadow-[8px_8px_24px_rgba(232,177,154,0.18)]"
           style={{ zIndex: 2 }}
         >
           <h1 className="text-2xl md:text-3xl font-extrabold text-mountain-purple mb-2 text-center">
