@@ -58,10 +58,10 @@ export default function Home() {
           style={{ zIndex: 2 }}
         >
           <h1 className="text-2xl md:text-3xl font-extrabold text-mountain-purple mb-2 text-center">
-            Bespoke Childcare in the Portes du Soleil
+            Bespoke Childcare in the Mountains of Morzine
           </h1>
           <p className="text-lg text-evergreen  mb-4 max-w-xl mx-auto text-center">
-            Private nannying and babysitting, year-round, tailored to your family’s needs. Local or visiting, your little ones will be cared for with nurture and attentiveness, filling each day with joyful moments.
+          Private nannying and babysitting in Morzine, Les Gets and the surrounding Ports Du Soleil area, offering year-round services tailored to your family’s needs.. Local or visiting, your little ones will be cared for with nurture and attentiveness, filling each day with joyful moments.
           </p>
           <Button href="/contact">Contact</Button>
         </div>

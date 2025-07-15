@@ -29,7 +29,7 @@ export default function About({ authors, settings }) {
       </div>
 
       <div className="prose prose-xl mx-auto my-14 text-center dark:prose-invert">
-      <p> With over six years working in childcare, I’ve worked in outdoor early years settings, taught yoga in schools, and have extensive experience as a private nanny, supporting families in meaningful ways.</p>
+      <p>With over six years working in childcare, and a qualified early years practitioner, I’ve worked in outdoor nurseries, taught yoga in schools, and have extensive experience as a private nanny, supporting families in meaningful ways. I’m so excited to bring my practice to Morzine and connect with families here to enjoy all the mountains have to offer.</p>
 <p>With an adventurous and caring spirit, my practice is rooted in nurturing children through creative play, meaningful connection, and time spent exploring the outdoors. My approach centers on building strong, secure attachments and ensuring each child feels safe, engaged, and valued. </p>
 <p>I’m paediatric first aid trained with an up-to-date DBS, combining a strong focus on safety with a playful, responsive approach. From roaming alpine trails and splashing around at Aquariaz to ski school pick up and making a yummy lunch, I tailor each day to your family’s needs to create cherished and enriching experiences in these glorious mountains.</p>
 

@@ -33,6 +33,8 @@ Book hourly, half day or full day packages.
 const checklist = [
   "DBS certified (up-to-date)",
   "Paediatric first aid trained",
+  "SVQ in Social Services for Children and Young People",
+  "Qualified Early Years Practitioner",
   "6+ years childcare experience",
   "Outdoor early years experience",
   "Yoga in schools",
