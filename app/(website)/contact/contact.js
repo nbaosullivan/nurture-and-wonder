@@ -46,21 +46,16 @@ export default function Contact({ settings }) {
 
   return (
     <Container>
-      <PageHeading className="mt-2 mb-3">Contact</PageHeading>
-      <div className="max-w-xl mx-auto text-center">
-        <p className="text-lg">To receive a personalised quote and discuss how I can best support your family, please get in touch.</p>
-      </div>
+      <PageHeading >Contact</PageHeading>
+      <div className="mt-12 prose prose-xl max-w-xl text-center mx-auto">
+          <p>To receive a personalised quote and discuss how I can best support your family, please get in touch.</p>
+        </div>
 
       <div className="grid my-10 md:grid-cols-2">
         <div className="my-10">
-          <h2 className="text-2xl font-semibold dark:text-white">
-            Contact Nurture and Wonder Nannying
-          </h2>
-          <p className="max-w-sm mt-5">
-          To receive a personalised quote and discuss how I can best support your family, please get in touch.
-          </p>
-
-          <div className="mt-5">
+     
+      
+          <div >
             <div className="flex items-center mt-2 space-x-2 text-evergreen dark:text-gray-400">
               <MapPinIcon className="w-4 h-4" />
               <span>Morzine, Haute-Savoie, France</span>
