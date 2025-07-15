@@ -108,7 +108,7 @@ export default function Home() {
       <Container>
       {/* Services Preview */}
       <h2 className="text-center text-2xl md:text-3xl  font-extrabold text-mountain-purple mb-14">Services Offered</h2>
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 mb-12">
+      <div className="grid grid-cols-1 gap-14 md:gap-8 md:grid-cols-2 lg:grid-cols-3 mb-12">
         {services.map((service, idx) => (
           <ServiceBox
             key={service.title}
