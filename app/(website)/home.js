@@ -6,29 +6,9 @@ import ServiceBox from "@/components/ServiceBox";
 import Button from "@/components/ui/Button";
 import TestimonialCard from "./testimonials/TestimonialCard";
 import { testimonials as allTestimonials } from "./testimonials/testimonials";
+import { services } from "./services/services";
 
-const services = [
-  {
-      title: "Flexible nannying",
-      description: `Need the kids picked up from ski school? Or maybe you fancy a full child-free day on the hill? 
-Book hourly, half day or full day packages. 
-`,
-      icon: SunIcon,
-      color: "bg-sunset-orange"
-  },
-  {
-      title: "Evening babysitting",
-      description: "Thinking about a dinner out in one of Morzine's top restaurants or a late night boogie? I've got you covered, from dinner and bedtime stories to sleep cover.",
-      icon: MoonIcon,
-      color: "bg-mountain-purple"
-  },
-  {
-      title: "Overnight care",
-      description: "You're a PDS resident with a business trip away planned? Experienced at proxy parenting, I offer overnight stays to take care of your little ones.",
-      icon: BedIcon,
-      color: "bg-sky-blue"
-  }
-];
+
 const testimonials = allTestimonials.slice(0, 2);
 
 export default function Home() {

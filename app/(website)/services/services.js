@@ -7,7 +7,7 @@ import ServiceBox from "@/components/ServiceBox";
 import PageHeading from "@/components/PageHeading";
 import ReadyToBookCTA from "@/components/ReadyToBookCTA";
 
-const services = [
+export const services = [
     {
         title: "Flexible nannying",
         description: `Need the kids picked up from ski school? Or maybe you fancy a full child-free day on the hill? 
@@ -30,7 +30,7 @@ Book hourly, half day or full day packages.
     }
 ];
 
-const checklist = [
+export const checklist = [
   "DBS certified (up-to-date)",
   "Paediatric first aid trained",
   "SVQ in Social Services for Children and Young People",
