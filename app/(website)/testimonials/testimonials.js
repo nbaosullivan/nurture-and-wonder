@@ -26,7 +26,7 @@ const testimonials = [
     name: "Lauren",
     service: "Babysitting Services",
     date: "March 2025",
-    text: "Thank you so much for looking after our girl, they had so much fun and woke up asking to do another tea party with Hannah!"
+    text: "Thank you so much for looking after our girls, they had so much fun and woke up asking to do another tea party with Hannah!"
   }
 
 ];
