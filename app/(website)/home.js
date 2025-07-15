@@ -35,9 +35,9 @@ export default function Home() {
   return (
     <>
       {/* Hero Section with Overlap */}
-      <div className="relative flex flex-col max-w-4xl mx-auto items-center justify-center md:mt-6 mb-56 md:mb-48 md:translate-x-[40px]">
+      <div className="relative flex flex-col max-w-4xl mx-auto items-center justify-center md:mt-6 mb-56 md:mb-48">
         {/* Hero Image with blur and gradient overlay */}
-        <div className="rounded-lg overflow-hidden shadow-lg relative md:-translate-x-[70px] bg-white"
+        <div className="rounded-lg overflow-hidden shadow-lg relative z-10 border-b-4 z-10 border-peach-blush-dark"
           style={{ zIndex: 1 }}
         >
           <Image
@@ -45,7 +45,7 @@ export default function Home() {
             alt="Nurture and Wonder - Hannah with children"
             width={1500}
             height={700}
-            className="md:h-[600px] md:w-[600px] w-[500px] h-[450px] object-center  md:object-[50%_55%] object-cover rounded-lg"
+            className=" md:h-[600px] md:w-[600px] w-[500px] h-[450px] object-center  md:object-[50%_55%] object-cover rounded-lg"
             priority
           />
           <div className="absolute inset-0 pointer-events-none opacity-30" style={{
@@ -54,7 +54,7 @@ export default function Home() {
         </div>
         {/* Overlapping Text Box */}
         <div
-          className="absolute w-[95%] md:w-auto -bottom-48 md:-bottom-28 flex items-center justify-center md:translate-x-[70px] bg-peach-blush rounded-lg px-10 py-12 md:py-10 md:px-10 flex flex-col items-center w-[420px] md:w-[500px] border-b-4 border-r-4 border-peach-blush-dark shadow-[8px_8px_24px_rgba(232,177,154,0.18)]"
+          className="absolute w-[95%] md:w-auto -bottom-48 md:-bottom-28 flex items-center justify-center bg-peach-blush rounded-lg px-10 py-12 md:py-10 md:px-10 flex flex-col items-center w-[420px] md:w-[500px] border-b-4 border-r-4 border-peach-blush-dark shadow-[8px_8px_24px_rgba(232,177,154,0.18)]"
           style={{ zIndex: 2 }}
         >
           <h1 className="text-2xl md:text-3xl font-extrabold text-mountain-purple mb-2 text-center">
