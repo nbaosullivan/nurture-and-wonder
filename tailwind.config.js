@@ -15,7 +15,9 @@ module.exports = {
         // Nurture and Wonder Color Palette
         'sun-cream': '#FFF3E3',        // Background
         'mountain-purple': '#7B5D8B',   // Header
+        'mountain-purple-dark': '#5A4066', // Darker shade for button shadow
         'sunset-orange': '#F4A14D',     // Button
+        'sunset-orange-dark': '#C97B2B', // Darker orange for button border
         'cloud-white': '#f5f5f5',       // Button text
         'cloud-grey': '#ededed',       // Subtle lighter grey/darker white for borders
         'peach-blush': '#F9C6B2',       // Accent box

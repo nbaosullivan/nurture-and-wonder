@@ -3,6 +3,7 @@ import PageHeading from "@/components/PageHeading";
 import { urlForImage } from "@/lib/sanity/image";
 import Image from "next/image";
 import Link from "next/link";
+import ReadyToBookCTA from "@/components/ReadyToBookCTA";
 
 export default function About({ authors, settings }) {
   return (
@@ -33,6 +34,7 @@ export default function About({ authors, settings }) {
 <p>I’m paediatric first aid trained with an up-to-date DBS, combining a strong focus on safety with a playful, responsive approach. From roaming alpine trails and splashing around at Aquariaz to ski school pick up and making a yummy lunch, I tailor each day to your family’s needs to create cherished and enriching experiences in these glorious mountains.</p>
 
       </div>
+      <ReadyToBookCTA />
     </Container>
   );
 }

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { SunIcon, MoonIcon, BedIcon, CheckCircleIcon } from "lucide-react";
 import ServiceBox from "@/components/ServiceBox";
 import PageHeading from "@/components/PageHeading";
+import ReadyToBookCTA from "@/components/ReadyToBookCTA";
 
 const services = [
     {
@@ -63,7 +64,7 @@ export default function Services({ authors, settings }) {
         {/* Checklist with cloud top background */}
         <div className="relative w-full flex flex-col items-center mt-20" style={{zIndex:1}}>
 
-          <ul className="relative max-w-2xl bg-white p-10 mx-auto rounded-lg mt-10 grid gap-3 md:grid-cols-2 list-none mb-20 border-b-4 border-r-4 border-cloud-grey transition-all duration-300 hover:border-b-4 hover:border-r-4 hover:border-transparent hover:shadow-xl hover:-translate-y-1" style={{zIndex:2}}>
+          <ul className="relative max-w-2xl bg-white p-10 mx-auto rounded-lg mt-10 grid gap-3 md:grid-cols-2 list-none border-b-4 border-r-4 border-cloud-grey transition-all duration-300 hover:border-b-4 hover:border-r-4 hover:border-transparent hover:shadow-xl hover:-translate-y-1" style={{zIndex:2}}>
             {checklist.map((item) => (
               <li key={item} className="flex items-center text-lg text-evergreen">
                 <CheckCircleIcon className="w-6 h-6 mr-3 text-evergreen flex-shrink-0" />
@@ -73,7 +74,7 @@ export default function Services({ authors, settings }) {
           </ul>
         </div>
       </div>
-
+      <ReadyToBookCTA />
     </Container>
   );
 }
