@@ -56,7 +56,7 @@ export default function Contact({ settings }) {
         <div className="my-12">
      
       
-          <div >
+          <div className="flex justify-center flex-col items-center md:block">
             <div className="flex items-center space-x-2 text-evergreen dark:text-gray-400">
               <MapPinIcon className="w-4 h-4" />
               <span>Morzine, Haute-Savoie, France</span>

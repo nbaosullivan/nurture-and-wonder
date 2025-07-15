@@ -153,7 +153,7 @@ export default function Navbar(props) {
                         <Link
                           href={item.href}
                           key={`${item.label}${index}`}
-                          className="w-full px-5 py-2 text-lg font-semibold text-mountain-purple hover:text-twilight-pink dark:text-gray-400"
+                          className="w-full px-5 uppercase py-2 text-xl font-extrabold text-mountain-purple hover:text-twilight-pink"
                           target={item.external ? "_blank" : ""}
                           rel={item.external ? "noopener" : ""}>
                           {item.label}
