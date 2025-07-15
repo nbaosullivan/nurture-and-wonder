@@ -4,6 +4,7 @@ import { urlForImage } from "@/lib/sanity/image";
 import Image from "next/image";
 import Link from "next/link";
 import ReadyToBookCTA from "@/components/ReadyToBookCTA";
+import {  CheckCircleIcon } from "lucide-react";
 
 export default function About({ authors, settings }) {
   return (
