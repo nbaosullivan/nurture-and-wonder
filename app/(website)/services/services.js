@@ -50,7 +50,7 @@ export default function Services({ authors, settings }) {
 
       <div className="mt-12">
         <div className="prose prose-xl text-center mx-auto">
-          <p>At Nurture and Wonder Nannying, every family’s needs are unique, which is why my prices are tailored to each booking. Hourly rates start €25 at but do vary depending on the number of hours required, the time of year, the age of your children, and any specific needs you may have.</p>
+          <p>At Nurture and Wonder Nannying, every family’s needs are unique, which is why my prices are tailored to each booking. Hourly rates start €20 at but do vary depending on the number of hours required, the time of year, the age of your children, and any specific needs you may have.</p>
         </div>
         <div className="grid grid-cols-1 gap-14 md:gap-8 md:grid-cols-2 lg:grid-cols-3 my-20">
           {services.map((service, idx) => (
