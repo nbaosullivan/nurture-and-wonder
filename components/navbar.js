@@ -44,7 +44,7 @@ export default function Navbar(props) {
         <Disclosure>
           {({ open }) => (
             <>
-              <div className="flex flex-wrap justify-between uppercase font-extrabold text-mountain-purple tracking-wide text-xl md:flex-nowrap md:gap-10">
+              <div className="flex flex-wrap justify-between uppercase font-extrabold text-mountain-purple tracking-wide text-xl md:flex-nowrap md:gap-5lg:gap-10">
                 <div className="order-1 hidden w-full flex-col items-center justify-start md:order-none md:flex md:w-auto md:flex-1 md:flex-row md:justify-end">
                   {leftmenu.map((item, index) => (
                     <Fragment key={`${item.label}${index}`}>
@@ -67,10 +67,10 @@ export default function Navbar(props) {
                     </Fragment>
                   ))}
                 </div>
-                <div className="flex w-full items-center justify-between md:w-auto">
+                <div className="flex w-full items-center justify-between md:w-auto shrink-0">
                   {/* Light mode text logo */}
-                  <Link href="/" className="flex flex-col items-center justify-center w-auto dark:hidden">
-                    <span className="text-evergreen font-bold  tracking-widest uppercase" style={{letterSpacing: '0.03em'}}>
+                  <Link href="/" className="">
+                    {/* <span className="text-evergreen font-bold  tracking-widest uppercase" style={{letterSpacing: '0.03em'}}>
                       NURTURE AND
                     </span>
                     <span className="text-evergreen font-extrabold text-3xl uppercase" style={{letterSpacing: '0.08em', marginTop: '-0.1em'}}>
@@ -82,7 +82,9 @@ export default function Navbar(props) {
                         NANNYING
                       </span>
                       <span className="block h-0.5 w-6 bg-evergreen rounded-full opacity-60"></span>
-                    </span>
+                    </span> */}
+                    <Image src="/img/Nurture-and-Wonder-Nannying-transparent.png" className="relative -top-[8px] hidden lg:block w-[190px] h-[190px]" width={190} height={190} alt="Nurture and Wonder Nannying logo" />
+                    <Image src="/img/Nurture-and-Wonder-Nannying-text-only.png" className="block lg:hidden" alt="Nurture and Wonder Nannying logo" width={150} height={150}/>
                   </Link>
         
         
