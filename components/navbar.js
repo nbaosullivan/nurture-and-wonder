@@ -44,7 +44,7 @@ export default function Navbar(props) {
         <Disclosure>
           {({ open }) => (
             <>
-              <div className="flex flex-wrap justify-between uppercase font-extrabold text-mountain-purple tracking-wide text-xl md:flex-nowrap md:gap-5lg:gap-10">
+              <div className="flex flex-wrap justify-between uppercase font-extrabold text-mountain-purple tracking-wide text-xl md:flex-nowrap  lg:gap-10">
                 <div className="order-1 hidden w-full flex-col items-center justify-start md:order-none md:flex md:w-auto md:flex-1 md:flex-row md:justify-end">
                   {leftmenu.map((item, index) => (
                     <Fragment key={`${item.label}${index}`}>
