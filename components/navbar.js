@@ -39,7 +39,7 @@ export default function Navbar(props) {
   const mobilemenu = [...leftmenu, ...rightmenu];
 
   return (
-    <Container>
+    <Container navbar={true}>
       <nav>
         <Disclosure>
           {({ open }) => (
