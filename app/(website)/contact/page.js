@@ -25,6 +25,8 @@ export const metadata = {
     description: "Contact Hannah for professional nanny and babysitting services in Morzine and Les Gets. Book childcare, discuss your needs, or check availability.",
     images: ["https://www.nurtureandwonder.co.uk/img/nurture-and-wonder-nannying-logo.png"],
   },
+  email: "info@nurtureandwonder.co.uk",
+  phone: '+44 7563 568646'
 };
 
 export default function ContactPage() {
