@@ -26,7 +26,8 @@ export const metadata = {
     images: ["https://www.nurtureandwonder.co.uk/img/nurture-and-wonder-nannying-logo.png"],
   },
   email: "info@nurtureandwonder.co.uk",
-  phone: '+44 7563 568646'
+  phone: '+44 7563 568646',
+  w3ckey: 'ae9f9423-c29e-4940-8a25-bce69ee0b195'
 };
 
 export default function ContactPage() {
