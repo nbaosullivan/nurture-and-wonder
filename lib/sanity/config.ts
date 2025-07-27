@@ -11,10 +11,13 @@ export const useCdn = process.env.NODE_ENV === "production";
 // SANITY_STUDIO_ for 3333 & *.sanity.studio
 export const projectId =
   process.env.NEXT_PUBLIC_SANITY_PROJECT_ID ||
-  (process.env.SANITY_STUDIO_PROJECT_ID as string);
+  process.env.SANITY_STUDIO_PROJECT_ID ||
+  "REPLACE_WITH_YOUR_ACTUAL_PROJECT_ID"; // Replace this with your actual Sanity project ID
 
 export const dataset =
-  process.env.NEXT_PUBLIC_SANITY_DATASET || ("production" as string);
+  process.env.NEXT_PUBLIC_SANITY_DATASET ||
+  process.env.SANITY_STUDIO_DATASET ||
+  "production";
 
 // see https://www.sanity.io/docs/api-versioning for how versioning works
 export const apiVersion =

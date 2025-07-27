@@ -34,14 +34,14 @@ export default function Home() {
         </div>
         {/* Overlapping Text Box */}
         <div
-          className="absolute w-[95%] md:w-auto -bottom-48 md:-bottom-28 flex items-center justify-center bg-peach-blush rounded-lg px-10 py-12 md:py-10 md:px-10 flex flex-col items-center w-[420px] md:w-[500px] border-b-4 border-r-4 border-peach-blush-dark shadow-[8px_8px_24px_rgba(232,177,154,0.18)]"
+          className="absolute w-[95%] md:w-auto -bottom-48 md:-bottom-28 flex items-center justify-center bg-peach-blush rounded-lg px-10 py-12 md:py-10 md:px-14 flex flex-col items-center w-[420px] md:w-[500px] border-b-4 border-r-4 border-peach-blush-dark shadow-[8px_8px_24px_rgba(232,177,154,0.18)]"
           style={{ zIndex: 2 }}
         >
-          <h1 className="text-2xl md:text-3xl font-extrabold text-mountain-purple mb-2 text-center">
-            Bespoke Childcare in the Mountains of Morzine
+          <h1 className="text-2xl md:text-3xl max-w-lg font-extrabold text-mountain-purple mb-2 text-center">
+           Nannying & Babysitting in Morzine, Les Gets & Portes du Soleil
           </h1>
-          <p className="text-lg text-evergreen  mb-4 max-w-xl mx-auto text-center">
-          Private nannying and babysitting in Morzine, Les Gets and the surrounding Portes du Soleil area, offering year-round services tailored to your family’s needs. Local or visiting, your little ones will be cared for with nurture and attentiveness, filling each day with joyful moments.
+          <p className="text-lg text-evergreen  mb-4 max-w-lg mx-auto text-center">
+          Offering bespoke, year-round childcare in Morzine, Les Gets, and the Portes du Soleil — thoughtfully tailored to your family’s needs. Your little ones will be cared for with nurture and attentiveness, filling each day with joyful moments.
           </p>
           <Button href="/contact">Contact</Button>
         </div>
@@ -87,7 +87,7 @@ export default function Home() {
 
       <Container>
       {/* Services Preview */}
-      <h2 className="text-center text-2xl md:text-3xl  font-extrabold text-mountain-purple mb-14">Services Offered</h2>
+      <h2 className="text-center text-2xl md:text-3xl  font-extrabold text-mountain-purple mb-14">Childcare Services in Morzine & Les Gets</h2>
       <div className="grid grid-cols-1 gap-14 md:gap-8 md:grid-cols-2 lg:grid-cols-3 mb-12">
         {services.map((service, idx) => (
           <ServiceBox
