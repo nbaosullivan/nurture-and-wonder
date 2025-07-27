@@ -83,7 +83,7 @@ export default function Navbar(props) {
                       </span>
                       <span className="block h-0.5 w-6 bg-evergreen rounded-full opacity-60"></span>
                     </span> */}
-                    <Image src="/img/Nurture-and-Wonder-Nannying-transparent.png" className="relative -top-[8px] hidden lg:block w-[190px] h-[190px]" width={190} height={190} alt="Nurture and Wonder Nannying logo" />
+                    <Image src="/img/nurture-and-wonder-nannying-logo.png" className="relative -top-[8px] hidden lg:block w-[190px] h-[190px]" width={190} height={190} alt="Nurture and Wonder Nannying logo" />
                     <Image src="/img/Nurture-and-Wonder-Nannying-text-only.png" className="block lg:hidden" alt="Nurture and Wonder Nannying logo" width={150} height={150}/>
                   </Link>
         
