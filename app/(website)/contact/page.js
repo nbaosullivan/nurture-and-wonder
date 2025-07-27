@@ -1,5 +1,7 @@
 import Contact from "./contact";
+import { getSettings } from "@/lib/sanity/client";
 
+// Static metadata that takes precedence
 export const metadata = {
   title: "Contact Nanny Morzine, Les Gets | Book Childcare | Hannah",
   description: "Contact Hannah for professional nanny and babysitting services in Morzine and Les Gets. Book childcare, discuss your needs, or check availability. Quick response guaranteed.",
@@ -25,13 +27,12 @@ export const metadata = {
     description: "Contact Hannah for professional nanny and babysitting services in Morzine and Les Gets. Book childcare, discuss your needs, or check availability.",
     images: ["https://www.nurtureandwonder.co.uk/img/nurture-and-wonder-nannying-logo.png"],
   },
-  email: "info@nurtureandwonder.co.uk",
-  phone: '+44 7563 568646',
-  w3ckey: 'ae9f9423-c29e-4940-8a25-bce69ee0b195'
 };
 
-export default function ContactPage() {
-  return <Contact />;
+
+export default async function ContactPage() {
+  const settings = await getSettings();
+  return <Contact settings={settings}/>;
 }
 
 // export const revalidate = 60;
