@@ -3,10 +3,10 @@ import About from "./about";
 
 export const metadata = {
   title: "Meet Hannah - Professional Nanny Morzine, Les Gets | 6+ Years Experience",
-  description: "Meet Hannah, your trusted nanny in Morzine and Les Gets. 6+ years childcare experience, outdoor education specialist, and children yoga teacher. Professional, reliable childcare.",
+  description: "Meet Hannah, your trusted nanny in Morzine and Les Gets. 6+ years childcare experience, outdoor education specialist, and kids yoga teacher. Professional, reliable childcare.",
   openGraph: {
     title: "Meet Hannah - Professional Nanny Morzine, Les Gets | 6+ Years Experience",
-    description: "Meet Hannah, your trusted nanny in Morzine and Les Gets. 6+ years childcare experience, outdoor education specialist, and childrenyoga teacher.",
+    description: "Meet Hannah, your trusted nanny in Morzine and Les Gets. 6+ years childcare experience, outdoor education specialist, and kids yoga teacher.",
     url: "https://www.nurtureandwonder.co.uk/about",
     siteName: "Nurture and Wonder Nannying",
     images: [
