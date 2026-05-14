@@ -3,6 +3,7 @@ import { Providers } from "./providers";
 import { cx } from "@/utils/all";
 import { Nunito, Lora } from "next/font/google";
 import Footer from "@/components/footer";
+import Script from 'next/script'
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -27,14 +28,20 @@ export default function RootLayout({
       suppressHydrationWarning
       className={cx(nunito.variable, lora.variable)}>
     <head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-C6Y14C1MGM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-C6Y14C1MGM');
-</script>
+<Script
+  src="https://www.googletagmanager.com/gtag/js?id=G-C6Y14C1MGM"
+  strategy="afterInteractive"
+/>
+
+<Script id="google-analytics" strategy="afterInteractive">
+  {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-C6Y14C1MGM');
+  `}
+</Script>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
