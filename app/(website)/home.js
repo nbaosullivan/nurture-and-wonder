@@ -38,7 +38,7 @@ export default function Home() {
           style={{ zIndex: 2 }}
         >
           <h1 className="text-2xl md:text-3xl max-w-lg font-extrabold text-mountain-purple mb-2 text-center">
-           Nannying & Babysitting in Morzine, Les Gets & Portes du Soleil
+           Childcare & Babysitting in Morzine, Les Gets & Portes du Soleil
           </h1>
           <p className="text-lg text-evergreen  mb-4 max-w-lg mx-auto text-center">
           Offering bespoke, year-round childcare in Morzine, Les Gets, and the Portes du Soleil — thoughtfully tailored to your family’s needs. Your little ones will be cared for with nurture and attentiveness, filling each day with joyful moments.
