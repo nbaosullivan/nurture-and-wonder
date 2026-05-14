@@ -27,6 +27,15 @@ export default function RootLayout({
       suppressHydrationWarning
       className={cx(nunito.variable, lora.variable)}>
     <head>
+      <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C6Y14C1MGM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C6Y14C1MGM');
+</script>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -57,7 +66,7 @@ export default function RootLayout({
     { "@type": "Place", "name": "Les Gets" },
     { "@type": "Place", "name": "Portes du Soleil" }
   ],
-  "description": "Nurture and Wonder offers bespoke nannying and babysitting services in Morzine, Les Gets, and the Portes du Soleil ski region. Trusted, flexible, and experienced childcare for holidays and seasonal stays.",
+  "description": "Nurture and Wonder offers bespoke childcare and babysitting services in Morzine, Les Gets, and the Portes du Soleil ski region. Trusted, flexible, and experienced childcare for holidays and seasonal stays.",
   "founder": { "@type": "Person", "name": "Hannah" },
   "foundingDate": "2022",
   "openingHoursSpecification": [
