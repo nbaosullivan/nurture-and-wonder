@@ -27,15 +27,6 @@ export default function RootLayout({
       suppressHydrationWarning
       className={cx(nunito.variable, lora.variable)}>
     <head>
-      <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-C6Y14C1MGM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-C6Y14C1MGM');
-</script>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
